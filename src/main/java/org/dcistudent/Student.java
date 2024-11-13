@@ -2,11 +2,12 @@ package org.dcistudent;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class Student {
     private boolean isGraduate = false;
     private String course = "";
-    private final ArrayList<String> courses = new ArrayList<>(Arrays.asList("Java", "Web Dev", "Data"));
+    private static final ArrayList<String> courses = new ArrayList<>(Arrays.asList("Java", "Web Dev", "Data"));
 
     /**
      * Set whether the student is a graduate student.
@@ -27,7 +28,7 @@ public class Student {
      * @return this Student object
      */
     public Student setCourse(String course) {
-        if (!this.courses.contains(course)) {
+        if (!courses.contains(course)) {
             throw new IllegalArgumentException("Invalid course");
         }
 
@@ -59,7 +60,7 @@ public class Student {
      *
      * @return the list of courses the student can take
      */
-    public ArrayList<String> getAvailableCourses() {
+    public List<String> getAvailableCourses() {
         return courses;
     }
 }
