@@ -53,4 +53,13 @@ public class Student {
     public String getCourse() {
         return course;
     }
+
+    /**
+     * Get the list of courses the student can take.
+     *
+     * @return the list of courses the student can take
+     */
+    public ArrayList<String> getAvailableCourses() {
+        return courses;
+    }
 }

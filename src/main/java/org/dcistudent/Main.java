@@ -9,7 +9,7 @@ public class Main {
         Student student = new Student();
         student
             .setGraduate(true)
-            .setCourse("Java")
+            .setCourse(student.getAvailableCourses().get(0))
         ;
 
         System.out.println("Student is a graduate student: " + student.isGraduate());
