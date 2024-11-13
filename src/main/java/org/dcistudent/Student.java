@@ -60,7 +60,7 @@ public class Student {
      *
      * @return the list of courses the student can take
      */
-    public List<String> getAvailableCourses() {
+    public static List<String> getAvailableCourses() {
         return courses;
     }
 }
